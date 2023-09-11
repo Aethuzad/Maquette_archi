@@ -15,6 +15,10 @@ img, input {
     width: 100%;
 }
 
+main section{
+    margin-top: 4rem;
+}
+
 header nav {
     font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -137,4 +141,24 @@ header li {
 
 #gallery img{
     vertical-align: bottom;
+}
+
+
+#about #cards{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card h3, .card p, .card h4{
+    padding: 1rem 0;
+}
+
+.card button{
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+#cards .card{
+    padding: 1rem;
 }
