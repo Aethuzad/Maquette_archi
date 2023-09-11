@@ -1,0 +1,117 @@
+@font-face {
+    font-family:'sego', Tahoma, Geneva, Verdana, sans-serif ;
+    src: url(../font/SEGOEUI.TTF);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+img, input {
+    width: 100%;
+}
+
+header nav {
+    font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 5px;
+    box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 8px 3px 0px rgba(0, 0, 0, 0.30);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 55px;
+    top: 0;
+    background-color: white;
+}
+
+header #logo{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0 1rem 0 1rem;
+    display: none;
+    
+}
+
+header li {
+    padding: 1rem;
+    
+}
+
+.ma-bars {
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#check:checked~ul{
+    display: block;
+}
+
+#img-header {
+    background-image:url(../img/architect.jpg) ;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#img-header h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-weight: 300;
+    
+    
+    
+}
+
+#logo span{
+    padding-right: .5rem;
+    font-weight: 900;
+}
+
+#img-header .br{
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    font-weight: 900;
+}
+
+#img-header .archi{
+    display: none;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#house1 {
+    
+    height: 30vh;
+}
