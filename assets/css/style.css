@@ -116,12 +116,25 @@ header li {
     display: none;
 }
 
-#projects{
+/* #project{
     display: flex;
     flex-wrap: wrap;
+} */
+
+#gallery div{
+    position: relative;
 }
 
-#house1 {
-    
-    height: 30vh;
+#gallery span{
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+}
+
+#gallery img{
+    vertical-align: bottom;
 }
