@@ -1,5 +1,5 @@
 @font-face {
-    font-family:'sego', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
     src: url(../font/SEGOEUI.TTF);
 }
 
@@ -11,11 +11,12 @@
     box-sizing: border-box;
 }
 
-img, input {
+img,
+input {
     width: 100%;
 }
 
-main section{
+main section {
     margin-top: 4rem;
 }
 
@@ -35,7 +36,7 @@ header nav {
     background-color: white;
 }
 
-header #logo{
+header #logo {
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -54,14 +55,14 @@ header ul {
     background-color: rgb(226, 236, 252);
     top: 7vh;
     right: 0;
-    
-    
+
+
 }
 
 header li {
     padding: 1rem;
     letter-spacing: 5px;
-    
+
 }
 
 .ma-bars {
@@ -71,17 +72,18 @@ header li {
     border-radius: .5rem;
     text-align: center;
 }
+
 #check {
     display: none;
 }
 
-#check:checked~ul{
+#check:checked~ul {
     display: flex;
     flex-direction: column;
 }
 
 #img-header {
-    background-image:url(../img/architect.jpg) ;
+    background-image: url(../img/architect.jpg);
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,17 +101,17 @@ header li {
     font-family: 'sego', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 5px;
     font-weight: 300;
-    
-    
-    
+
+
+
 }
 
-#logo span{
+#logo span {
     padding-right: .5rem;
     font-weight: 900;
 }
 
-#img-header .br{
+#img-header .br {
     padding: 1rem;
     margin-right: 1rem;
     background-color: rgba(0, 0, 0, 0.658);
@@ -117,7 +119,7 @@ header li {
     font-weight: 900;
 }
 
-#img-header .archi{
+#img-header .archi {
     display: none;
 }
 
@@ -126,12 +128,12 @@ header li {
     flex-wrap: wrap;
 } */
 
-#gallery div{
+#gallery div {
     position: relative;
     margin: 1rem auto;
 }
 
-#gallery span{
+#gallery span {
     background-color: black;
     color: white;
     position: absolute;
@@ -142,30 +144,32 @@ header li {
     margin: 0.5rem 0;
 }
 
-#gallery img{
+#gallery img {
     vertical-align: bottom;
     padding: 0.5rem 0;
-    
+
 }
 
 
-#about #cards{
+#about #cards {
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
-    
+
 }
 
-#about p{
+#about p {
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
 
-.card h3, .card p, .card h4{
+.card h3,
+.card p,
+.card h4 {
     padding: 0.8rem 0;
 }
 
-.card button{
+.card button {
     width: 100%;
     margin-bottom: 1.5rem;
     padding: 0.5rem 0;
@@ -178,14 +182,14 @@ header li {
     margin: 0.5rem 0;
 }
 
-#contact .send{
+#contact .send {
     background-color: black;
     color: white;
     width: fit-content;
     margin: 1rem 0;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     height: 10vh;
@@ -195,81 +199,103 @@ footer{
     align-items: center;
 }
 
-#project,#about,#contact{
+#project,
+#about,
+#contact {
     width: 95%;
     margin: auto;
 }
 
-#project h2,#about h2,#contact h2{
+#project h2,
+#about h2,
+#contact h2 {
     padding-bottom: 1rem;
     padding-top: 3rem;
     border-bottom: 1px lightgray solid;
 }
 
-#contact p{
+#contact p {
     padding: 1rem 0;
 }
 
 @media screen and (min-width:576px) {
-    #img-header .archi{
+    #img-header .archi {
         display: inline;
     }
-    #gallery div,#cards div{
+
+    #gallery div,
+    #cards div {
         width: 49%;
     }
-    #gallery,#cards{
+
+    #gallery,
+    #cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     header ul {
         display: flex;
         list-style-type: none;
         justify-content: space-around;
         align-items: center;
-        padding:0 1rem;
+        padding: 0 1rem;
         /* display: none; */
         position: absolute;
         background-color: rgb(255, 255, 255);
         top: 0;
         right: 0;
-        
-        
+        /* On peut aussi tout simplement faire "header ul : display flex, flex direction row et position static" */
+
     }
-    .ma-bars {
+
+    /* .ma-bars {
     display: none;
         padding: 0.5rem;
         margin: 0.5rem;
         border: 1px solid black;
         border-radius: .5rem;
         text-align: center;
+    } */
+    
+    #burger {
+        display: none;
+    }
 }
-}
+
 @media screen and (min-width:1024px) {
-    #gallery div,#cards div{
+
+    #gallery div,
+    #cards div {
         width: 24%;
     }
+
     header ul {
         display: flex;
         list-style-type: none;
         justify-content: space-around;
         align-items: center;
-        padding:0 1rem;
+        padding: 0 1rem;
         /* display: none; */
         position: absolute;
         background-color: rgb(255, 255, 255);
         top: 0;
         right: 0;
-        
-        
+
+
     }
-.ma-bars {
+
+    /* .ma-bars {
     display: none;
         padding: 0.5rem;
         margin: 0.5rem;
         border: 1px solid black;
         border-radius: .5rem;
         text-align: center;
-}
+} */
+    #burger {
+        display: none;
+    }
 }
