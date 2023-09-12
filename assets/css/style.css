@@ -47,6 +47,7 @@ header ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    margin: 0.5rem 0;
     padding: 0 1rem 0 1rem;
     display: none;
     position: absolute;
@@ -150,7 +151,8 @@ header li {
 
 #about #cards{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     
 }
 
@@ -170,11 +172,6 @@ header li {
     border: none;
 }
 
-#cards .card{
-    
-}
-
-
 #contact input {
     border: 0.5px lightgray solid;
     padding: 0.5rem;
@@ -184,7 +181,7 @@ header li {
 #contact .send{
     background-color: black;
     color: white;
-    width: 45%;
+    width: fit-content;
     margin: 1rem 0;
 }
 
@@ -193,9 +190,6 @@ footer{
     color: white;
     height: 10vh;
     width: 100%;
-}
-
-#foot{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,18 +214,62 @@ footer{
     #img-header .archi{
         display: inline;
     }
-    #gallery div{
-        width: 48%;
+    #gallery div,#cards div{
+        width: 49%;
     }
-    #gallery{
+    #gallery,#cards{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    header ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        padding:0 1rem;
+        /* display: none; */
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        right: 0;
+        
+        
+    }
+    .ma-bars {
+    display: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        border-radius: .5rem;
+        text-align: center;
 }
-
+}
 @media screen and (min-width:1024px) {
-    #gallery div{
+    #gallery div,#cards div{
         width: 24%;
     }
+    header ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        padding:0 1rem;
+        /* display: none; */
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        right: 0;
+        
+        
+    }
+.ma-bars {
+    display: none;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        border: 1px solid black;
+        border-radius: .5rem;
+        text-align: center;
+}
 }
